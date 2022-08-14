@@ -1,14 +1,13 @@
 @use '../util/' as u;
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
     width: min(100% - u.rem(40), u.rem(1000));
     margin-inline: auto;
 
     &__logo {
-        margin-inline: auto;
+        margin: 0 auto;
         padding: 2rem;
+        text-align: center;
     }
 
     &__history{
@@ -20,11 +19,39 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
+
+            @include u.breakpoint(large) {
+                flex-direction: row;
+                justify-content: center;
+                align-items: baseline;
+
+                .btn-cyan {
+                    width: 20%;
+                }
+
+                .btn-blue {
+                    width: 20%;
+                }
+            }
         }
     }
 
     &__snippets {
         text-align: center;
+
+        @include u.breakpoint(large) {
+            .flex{
+                display: flex;
+                gap: 2rem;
+            }
+            .flexs {
+                width: 50%;
+            }
+            .rflex {
+                width: 50%;
+                text-align: left;
+            }
+        }
     }
 
     &__access {
@@ -33,13 +60,28 @@
 
     &__workflow {
         text-align: center;
+
+        @include u.breakpoint(large) {
+            .flex {
+                display: flex;
+                gap: 2rem;
+            }
+        }
     }
 
     &__companies {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        padding: 8rem;
+        .flexc {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 4rem;
+        }
+
+        @include u.breakpoint(large) {
+            .flexc {
+                flex-direction: row;
+            }
+        }
     }
 
     &__download {
@@ -49,6 +91,20 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
+
+            @include u.breakpoint(large) {
+                flex-direction: row;
+                justify-content: center;
+                align-items: baseline;
+
+                .btn-cyan {
+                    width: 20%;
+                }
+
+                .btn-blue {
+                    width: 20%;
+                }
+            }
         }
     }
 }
@@ -61,10 +117,26 @@
     align-items: center;
     background-color: var(--neutral-gb);
 
+    @include u.breakpoint(large) {
+        flex-direction: row;
+        gap: 15rem;
+        justify-content: center;
+    }
+
     &--links {
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 3rem;
+
+        @include u.breakpoint(large) {
+            flex-direction: row;
+
+            .flexf {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
     }
 }

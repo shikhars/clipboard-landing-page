@@ -47,6 +47,10 @@ body {
   font-size: 1.125rem;
 }
 
+a {
+  align-self: flex-start;
+}
+
 :root {
   --primary-strong-cyan: #26baa4;
   --primary-light-blue: #6173ff;
@@ -81,13 +85,12 @@ p {
 
 .grid {
   width: min(100% - 2.5rem, 62.5rem);
-  grid-template-columns: 1fr;
   margin-inline: auto;
-  display: grid;
 }
 
 .grid__logo {
-  margin-inline: auto;
+  text-align: center;
+  margin: 0 auto;
   padding: 2rem;
 }
 
@@ -103,15 +106,60 @@ p {
   display: flex;
 }
 
-.grid__snippets, .grid__access, .grid__workflow {
+@media (min-width: 62.5em) {
+  .grid__history--btn {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .grid__history--btn .btn-cyan, .grid__history--btn .btn-blue {
+    width: 20%;
+  }
+}
+
+.grid__snippets {
   text-align: center;
 }
 
-.grid__companies {
+@media (min-width: 62.5em) {
+  .grid__snippets .flex {
+    gap: 2rem;
+    display: flex;
+  }
+
+  .grid__snippets .flexs {
+    width: 50%;
+  }
+
+  .grid__snippets .rflex {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+.grid__access, .grid__workflow {
+  text-align: center;
+}
+
+@media (min-width: 62.5em) {
+  .grid__workflow .flex {
+    gap: 2rem;
+    display: flex;
+  }
+}
+
+.grid__companies .flexc {
   flex-direction: column;
-  gap: 3rem;
-  padding: 8rem;
+  gap: 2rem;
+  padding: 4rem;
   display: flex;
+}
+
+@media (min-width: 62.5em) {
+  .grid__companies .flexc {
+    flex-direction: row;
+  }
 }
 
 .grid__download {
@@ -124,6 +172,18 @@ p {
   display: flex;
 }
 
+@media (min-width: 62.5em) {
+  .grid__download--btn {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .grid__download--btn .btn-cyan, .grid__download--btn .btn-blue {
+    width: 20%;
+  }
+}
+
 .grid__footer {
   background-color: var(--neutral-gb);
   flex-direction: column;
@@ -133,11 +193,31 @@ p {
   display: flex;
 }
 
+@media (min-width: 62.5em) {
+  .grid__footer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15rem;
+  }
+}
+
 .grid__footer--links {
   text-align: center;
   flex-direction: column;
-  gap: 1rem;
+  gap: 3rem;
   display: flex;
 }
 
-/*# sourceMappingURL=index.9b9ce7f4.css.map */
+@media (min-width: 62.5em) {
+  .grid__footer--links {
+    flex-direction: row;
+  }
+
+  .grid__footer--links .flexf {
+    flex-direction: column;
+    gap: 2rem;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.af8ba2ff.css.map */
