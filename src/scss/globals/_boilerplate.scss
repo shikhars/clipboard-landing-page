@@ -1,0 +1,22 @@
+@use '../util/' as u;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: u.rem(18);
+    font-family: u.$font;
+    background-image: url(/src/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

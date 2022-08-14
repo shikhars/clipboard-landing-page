@@ -1,0 +1,20 @@
+@use 'fonts' as f;
+
+.no-underline {
+    text-decoration: none;
+    color: var(--neutral-dgb);
+    font-weight: f.$fw-400;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.smaller-logo {
+    transform: scale(0.5);
+}
+
+.spacer {
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,14 @@
+@use '../util/' as u;
+
+h1,
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: u.$fw-600;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
