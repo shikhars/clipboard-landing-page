@@ -4,6 +4,17 @@
     width: min(100% - u.rem(40), u.rem(1000));
     margin-inline: auto;
 
+    @include u.breakpoint(large) {
+
+        body {
+            background-image: url(/src/images/bg-header-desktop.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+
     &__logo {
         margin: 0 auto;
         padding: 2rem;
@@ -73,13 +84,21 @@
         .flexc {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
-            padding: 4rem;
+            gap: 3rem;
+            padding: 8rem;
+            align-items: center;
+
+            img {
+                max-width: u.rem(400);
+            }
         }
 
         @include u.breakpoint(large) {
             .flexc {
                 flex-direction: row;
+                gap: 3rem;
+                padding: 2rem;
+                margin: 0 auto;
             }
         }
     }
@@ -119,7 +138,7 @@
 
     @include u.breakpoint(large) {
         flex-direction: row;
-        gap: 15rem;
+        gap: 12rem;
         justify-content: center;
     }
 
@@ -127,16 +146,28 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 1.5rem;
+
+        .flexf {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
 
         @include u.breakpoint(large) {
             flex-direction: row;
+            gap: 3rem;
 
             .flexf {
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
+
+                a {
+                    align-self: flex-start;
+                }
             }
         }
     }
 }
+

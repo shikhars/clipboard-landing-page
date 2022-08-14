@@ -6,6 +6,7 @@
 
 .social {
   gap: 1rem;
+  margin-top: 2rem;
   display: flex;
 }
 
@@ -47,10 +48,6 @@ body {
   font-size: 1.125rem;
 }
 
-a {
-  align-self: flex-start;
-}
-
 :root {
   --primary-strong-cyan: #26baa4;
   --primary-light-blue: #6173ff;
@@ -86,6 +83,15 @@ p {
 .grid {
   width: min(100% - 2.5rem, 62.5rem);
   margin-inline: auto;
+}
+
+@media (min-width: 62.5em) {
+  .grid body {
+    background-image: url("bg-header-desktop.e682b66b.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .grid__logo {
@@ -151,14 +157,22 @@ p {
 
 .grid__companies .flexc {
   flex-direction: column;
-  gap: 2rem;
-  padding: 4rem;
+  align-items: center;
+  gap: 3rem;
+  padding: 8rem;
   display: flex;
+}
+
+.grid__companies .flexc img {
+  max-width: 25rem;
 }
 
 @media (min-width: 62.5em) {
   .grid__companies .flexc {
     flex-direction: row;
+    gap: 3rem;
+    margin: 0 auto;
+    padding: 2rem;
   }
 }
 
@@ -197,26 +211,37 @@ p {
   .grid__footer {
     flex-direction: row;
     justify-content: center;
-    gap: 15rem;
+    gap: 12rem;
   }
 }
 
 .grid__footer--links {
   text-align: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.grid__footer--links .flexf {
+  flex-direction: column;
+  gap: 1.5rem;
   display: flex;
 }
 
 @media (min-width: 62.5em) {
   .grid__footer--links {
     flex-direction: row;
+    gap: 3rem;
   }
 
   .grid__footer--links .flexf {
     flex-direction: column;
     gap: 2rem;
     display: flex;
+  }
+
+  .grid__footer--links .flexf a {
+    align-self: flex-start;
   }
 }
 
