@@ -110,7 +110,7 @@ p {
 .grid__companies {
   flex-direction: column;
   gap: 3rem;
-  padding: 5rem;
+  padding: 8rem;
   display: flex;
 }
 
