@@ -35,4 +35,5 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 - Sass Built-in modules (sass:map and sass:math)
 - Flexbox
 
-#Note: This solution does not use CSS Grid. The naming convention used for classes in this solution starts with ".grid" because I initially started working on this solution using Grid. I later realized using Flexbox was a simpler approach for this solution. Kindly ignore the class naming convention for this solution.
+### Note:
+This solution does not use CSS Grid. The naming convention used for classes in this solution starts with ".grid" because I initially started working on this solution using Grid. I later realized using Flexbox was a simpler approach for this solution. Kindly ignore the class naming convention for this solution.
