@@ -243,7 +243,7 @@ p {
   .grid__footer {
     flex-direction: row;
     justify-content: center;
-    gap: 12rem;
+    gap: 10rem;
   }
 }
 
@@ -294,4 +294,4 @@ p {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=index.4d6437b9.css.map */
+/*# sourceMappingURL=index.7ee294cb.css.map */

@@ -162,7 +162,7 @@
 
     @include u.breakpoint(large) {
         flex-direction: row;
-        gap: 12rem;
+        gap: 10rem;
         justify-content: center;
     }
 
