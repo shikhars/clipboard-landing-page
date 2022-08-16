@@ -121,6 +121,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
+    margin-bottom: 5rem;
   }
 
   .grid__history--btn .btn-cyan {
@@ -299,4 +300,4 @@ p {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=index.29636537.css.map */
+/*# sourceMappingURL=index.2779f0a5.css.map */
