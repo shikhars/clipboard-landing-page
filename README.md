@@ -24,13 +24,16 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 - I wrote the html first to structure the webpage.
 - I created Sass partials and folders to organise the Sass workflow.
 - I used the mobile-first approach to create the layout for smaller devices.
-- I used CSS Grid, @mixins, and @media queries to create breakpoints for Mobile and Desktop layouts.
+- I used Flexbox to build the mobile layout and modified the Flex items to achieve the desired desktop layout.
+- I used @mixins, and @media queries to create breakpoints for Mobile and Desktop layouts.
 
 ### Built with
 
 - HTML5
 - SCSS
-- CSS Grid
 - CSS Custom Prpoerties
 - Sass Built-in modules (sass:map and sass:math)
 - Flexbox
+
+### Note:
+This solution does not use CSS Grid. The naming convention used for classes in this solution starts with ".grid" because I initially started working on this solution using Grid. I later realized using Flexbox was a simpler approach for this solution. Kindly ignore the class naming convention for this solution.
