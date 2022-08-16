@@ -18,6 +18,10 @@
   margin-bottom: 3rem;
 }
 
+.extra-spacer {
+  margin-bottom: 6rem;
+}
+
 h1, h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -96,7 +100,7 @@ p {
 
 .grid__logo {
   text-align: center;
-  margin: 0 auto;
+  margin: 3rem auto;
   padding: 2rem;
 }
 
@@ -167,6 +171,7 @@ p {
 @media (min-width: 62.5em) {
   .grid__workflow .flex {
     gap: 2rem;
+    margin-bottom: 5rem;
     display: flex;
   }
 }
@@ -187,7 +192,7 @@ p {
   .grid__companies .flexc {
     flex-direction: row;
     gap: 3rem;
-    margin: 0 auto;
+    margin: 5rem auto;
     padding: 2rem;
   }
 }
@@ -294,4 +299,4 @@ p {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=index.7ee294cb.css.map */
+/*# sourceMappingURL=index.29636537.css.map */
